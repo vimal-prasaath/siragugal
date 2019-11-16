@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Siragugal Trust !!!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.jpg" type="image/gif" sizes="16x16">
+
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/enroll.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="home"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="events">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown">About Us</a>
+                        <div class="dropdown-menu">
+                            <a href="#about" class="dropdown-item js-scroll-trigger">About Us</a>
+                            <a href="#team" class="dropdown-item js-scroll-trigger">Key People</a>
+                            <a href="#contact" class="dropdown-item js-scroll-trigger">Contact Us</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown">Mission &amp; Vision</a>
+                        <div class="dropdown-menu">
+                            <a href="siragugalway" class="dropdown-item">Mission &amp; Vision</a>
+                            <a href="siragugalway" class="dropdown-item">Siragugal Way</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="mt-2 mr-3 js-scroll-trigger">
+                            <a class=" btn btn-primary" href=javascript:void(0) onclick="donate()">DONATE</a>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item" id="login">
+                        <a class="btn btn-primary text-uppercase mt-2" id="login-btn" href="login">Login / Signup</a>
+                        <div class="dropdown d-none" id="login-drpdwm">
+                            <a class="btn btn-primary dropdown-toggle mt-2" href="#" role="button" id="userName" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="userprofile">My Profile</a>
+                                <a class="dropdown-item" href="#" onclick="logout()">Log Out</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="enroll-wrapper">
+        <div class="container pt-3">
+            <div class="vol-contact-details">
+                <div class="row">
+                    <h4 class="col-12">Contact Details</h4>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-email">Email address *</label>
+                            <input type="email" class="form-control" id="vol-email" aria-describedby="emailHelp" placeholder="Enter EmailId">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-mobile">Mobile Number</label>
+                            <input type="text" class="form-control" id="vol-mobile" aria-describedby="emailHelp" placeholder="Enter Mobile Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-w-mobile">Whatsapp Number</label>
+                            <input type="text" class="form-control" id="vol-w-mobile" aria-describedby="emailHelp" placeholder="Enter Whatsapp Number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vol-personal-details volunteer d-none">
+                <div class="row">
+                    <h4 class="col-12">Personal Information</h4>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-name">Name</label>
+                            <input type="text" class="form-control" id="vol-name" aria-describedby="emailHelp" placeholder="Enter Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group row">
+                            <label class="col-lg-12">Gender</label>
+                            <div class="col-lg-4">
+                                <label for="vol-male">Male</label>
+                                <input type="radio" class="form-control" id="vol-male" name="gender" value="M" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="vol-female">Female</label>
+                                <input type="radio" class="form-control" id="vol-female" name="gender" value="F" aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="vol-others">Others</label>
+                                <input type="radio" class="form-control" id="vol-others" name="gender" value="O" aria-describedby="emailHelp">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-dob">Date Of Birth</label>
+                            <input type="date" class="form-control" id="vol-dob" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-b-group">Blood Group</label>
+                            <select name="b-group" class="form-control" id="vol-b-group">
+                                <option value="O+ve">O+ve</option>
+                                <option value="O-ve">O-ve</option>
+                                <option value="A+ve">A+ve</option>
+                                <option value="A-ve">A-ve</option>
+                                <option value="B+ve">B+ve</option>
+                                <option value="B-ve">B+ve</option>
+                                <option value="AB+ve">AB+ve</option>
+                                <option value="AB-ve">AB-ve</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-name">Father's Name</label>
+                            <input type="text" class="form-control" id="vol-fname" aria-describedby="emailHelp" placeholder="Enter Father's Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-name">Mother's Name</label>
+                            <input type="text" class="form-control" id="vol-mname" aria-describedby="emailHelp" placeholder="Enter Mother'sName">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vol-address-details volunteer d-none">
+                <div class="row">
+                    <h4 class="col-12">Native</h4>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-state">Native State</label>
+                            <select name="n-state" class="form-control" id="vol-state">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-district">Native District</label>
+                            <select name="n-district" class="form-control" id="vol-district">
+
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-state">Taluk</label>
+                            <input type="text" class="form-control" id="vol-taluk" aria-describedby="emailHelp" placeholder="Enter taluk's Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4 class="col-12">Permanent Address</h4>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-address-per">Address</label>
+                            <input type="text" class="form-control" id="vol-address-per" aria-describedby="emailHelp" placeholder="Enter Address">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-state-per">State</label>
+                            <select name="p-state" class="form-control" id="vol-state-per">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-district-per">District</label>
+                            <select name="p-district" class="form-control" id="vol-district-per">
+
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-pin-per">Pin-Code</label>
+                            <input type="number" class="form-control" id="vol-pin-per" aria-describedby="emailHelp" placeholder="Enter Pin-code">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4 class="col-12">Current Address</h4>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-address-cur">Address</label>
+                            <input type="text" class="form-control" id="vol-address-cur" aria-describedby="emailHelp" placeholder="Enter Address">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-state-cur">State</label>
+                            <select name="p-state" class="form-control" id="vol-state-cur">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-district-cur">District</label>
+                            <select name="p-district" class="form-control" id="vol-district-cur">
+
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="vol-pin-cur">Pin-Code</label>
+                            <input type="number" class="form-control" id="vol-pin-cur" aria-describedby="emailHelp" placeholder="Enter Pin-code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vol-edu-details volunteer d-none">
+                <div class="row">
+                    <h4 class="col-12">Eduction Details</h4>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="degree">Degree</label>
+                            <select name="degree" id="degree" class="form-control">
+                                <option value="pg">PG</option>
+                                <option value="ug">UG</option>
+                                <option value="iti">ITI</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4 class="col-12">ITI</h4>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="iti-institute">Name of the Institution</label>
+                            <input type="text" name="" id="iti-institute" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="iti-place">Place of Study</label>
+                            <input type="text" name="" id="iti-place" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="iti-year">Year of Completion</label>
+                            <input type="text" name="" id="iti-year" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="iti-year">Course</label>
+                            <input type="text" name="" id="iti-course" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="iti-branch">Branch</label>
+                            <input type="text" name="" id="iti-branch" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4 class="col-12">UG</h4>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="ug-institute">Name of the Institution</label>
+                            <input type="text" name="" id="ug-institute" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="ug-place">Place of Study</label>
+                            <input type="text" name="" id="ug-place" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="ug-year">Year of Completion</label>
+                            <input type="text" name="" id="ug-year" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="ug-year">Course</label>
+                            <input type="text" name="" id="ug-course" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="ug-branch">Branch</label>
+                            <input type="text" name="" id="ug-branch" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4 class="col-12">PG</h4>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="pg-institute">Name of the Institution</label>
+                            <input type="text" name="" id="pg-institute" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="pg-place">Place of Study</label>
+                            <input type="text" name="" id="pg-place" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="pg-year">Year of Completion</label>
+                            <input type="text" name="" id="pg-year" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="pg-year">Course</label>
+                            <input type="text" name="" id="pg-course" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="pg-branch">Branch</label>
+                            <input type="text" name="" id="pg-branch" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="form-control next-button m-auto" onclick="nextSlide()">NEXT</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a href="privacypolicy">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="termsandcond">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/Siragugal2serve" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/SiragugalTrust" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/SiragugalTrust" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/SiragugalTrust" target="_blank">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+
+                    <label class="our-team">Powered By
+                        <span class="our-team">The CoDe Team.</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/enroll.js"></script>
+    <script src="js/agency.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>

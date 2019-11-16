@@ -1,0 +1,68 @@
+[28-Aug-2019 15:25:24 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/wh2ca838ufps/public_html/siragugal/config/Database.php on line 17
+[28-Aug-2019 15:25:24 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 208
+[28-Aug-2019 15:25:24 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/api/user/login.php on line 70
+[28-Aug-2019 15:25:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on null in /home/wh2ca838ufps/public_html/siragugal/models/User.php:209
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/login.php(51): User->loginUser('9876543211', 'test1234')
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 209
+[28-Aug-2019 15:27:10 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'wh2ca838ufps'@'localhost' (using password: NO) in /home/wh2ca838ufps/public_html/siragugal/config/Database.php on line 17
+[28-Aug-2019 15:27:10 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 208
+[28-Aug-2019 15:27:10 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/api/user/login.php on line 70
+[28-Aug-2019 15:27:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on null in /home/wh2ca838ufps/public_html/siragugal/models/User.php:209
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/login.php(51): User->loginUser('9876543211', 'test1234')
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 209
+[28-Aug-2019 15:27:29 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'wh2ca838ufps'@'localhost' (using password: YES) in /home/wh2ca838ufps/public_html/siragugal/config/Database.php on line 17
+[28-Aug-2019 15:27:29 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 208
+[28-Aug-2019 15:27:29 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/api/user/login.php on line 70
+[28-Aug-2019 15:27:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on null in /home/wh2ca838ufps/public_html/siragugal/models/User.php:209
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/login.php(51): User->loginUser('9876543211', 'test1234')
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 209
+[28-Aug-2019 15:27:29 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'wh2ca838ufps'@'localhost' (using password: YES) in /home/wh2ca838ufps/public_html/siragugal/config/Database.php on line 17
+[28-Aug-2019 15:27:29 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 208
+[28-Aug-2019 15:27:29 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/api/user/login.php on line 70
+[28-Aug-2019 15:27:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on null in /home/wh2ca838ufps/public_html/siragugal/models/User.php:209
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/login.php(51): User->loginUser('9876543211', 'test1234')
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 209
+[28-Aug-2019 15:27:45 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/wh2ca838ufps/public_html/siragugal/config/Database.php on line 17
+[28-Aug-2019 15:27:45 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 208
+[28-Aug-2019 15:27:45 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/api/user/login.php on line 70
+[28-Aug-2019 15:27:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on null in /home/wh2ca838ufps/public_html/siragugal/models/User.php:209
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/login.php(51): User->loginUser('9876543211', 'test1234')
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 209
+[28-Aug-2019 15:34:15 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'cpses_wh45bvxkh4'@'localhost' (using password: NO) in /home/wh2ca838ufps/public_html/siragugal/config/Database.php on line 17
+[28-Aug-2019 15:34:15 UTC] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 208
+[28-Aug-2019 15:34:15 UTC] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/wh2ca838ufps/public_html/siragugal/api/user/login.php on line 70
+[28-Aug-2019 15:34:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on null in /home/wh2ca838ufps/public_html/siragugal/models/User.php:209
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/login.php(51): User->loginUser('9876543211', 'test1234')
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 209
+[28-Aug-2019 15:41:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wh2ca838ufps/public_html/siragugal/models/User.php:211
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/login.php(51): User->loginUser(9876543211, 'test1234')
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 211
+[28-Aug-2019 15:42:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wh2ca838ufps/public_html/siragugal/models/User.php:211
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/login.php(51): User->loginUser(9876543211, 'test1234')
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 211
+[03-Sep-2019 16:19:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wh2ca838ufps/public_html/siragugal/models/User.php:66
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/new.php(81): User->findOneUser(9715275317)
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 66
+[07-Sep-2019 07:38:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wh2ca838ufps/public_html/siragugal/models/User.php:66
+Stack trace:
+#0 /home/wh2ca838ufps/public_html/siragugal/api/user/new.php(81): User->findOneUser(3452662662)
+#1 {main}
+  thrown in /home/wh2ca838ufps/public_html/siragugal/models/User.php on line 66

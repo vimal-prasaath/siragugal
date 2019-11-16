@@ -1,0 +1,10 @@
+
+.payment-wrapper {
+    height: calc(100vh - 96px);
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),white);
+}
+.list-group-item.active,.btn-primary {
+    background-color: #fed136 !important;
+    border-color: #fed136 !important;
+}

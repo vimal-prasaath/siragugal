@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Siragugal Trust !!!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.jpg" type="image/gif" sizes="16x16">
+
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/event.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="home"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="events">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown">About Us</a>
+                        <div class="dropdown-menu">
+                            <a href="home#about" class="dropdown-item js-scroll-trigger">About Us</a>
+                            <a href="home#team" class="dropdown-item js-scroll-trigger">Key People</a>
+                            <a href="home#contact" class="dropdown-item js-scroll-trigger">Contact Us</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown">Mission &amp; Vision</a>
+                        <div class="dropdown-menu">
+                            <a href="siragugalway" class="dropdown-item">Mission &amp; Vision</a>
+                            <a href="siragugalway" class="dropdown-item">Siragugal Way</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="mt-2 mr-3 js-scroll-trigger">
+                            <a class=" btn btn-primary" href="voulnteerenrollment">Volunteer</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <div class="mt-2 mr-3 js-scroll-trigger">
+                            <a class=" btn btn-primary" href=javascript:void(0) onclick="donate()">DONATE</a>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item" id="login">
+                        <a class="btn btn-primary text-uppercase mt-2" id="login-btn" href="login">Login / Signup</a>
+                        <div class="dropdown d-none" id="login-drpdwm">
+                            <a class="btn btn-primary dropdown-toggle mt-2" href="#" role="button" id="userName" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="userprofile">My Profile</a>
+                                <a class="dropdown-item" href="#" onclick="logout()">Log Out</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- <div class="event-wrapper">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           Education
+                        </button>
+                    </h5>
+                </div>
+    
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Welfare
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Medical
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div> -->
+
+    <div class="event-wrapper">
+                <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">HEALTH</h5>
+                <p>“It is health that is real wealth” –Millions of lives are lost every day. Reasons are many but the most common
+                    one is the failureof providing appropriate treatment at the right time. People from rural areasstill
+                    suffer evenwithout basic medical amenities. Can the cost of life be equated to a poor man’s inability
+                    to avail treatment?</p>
+                <a href="medical">More...</a>
+
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">EDUCATION</h5>
+                <p>
+                    “Education is the most powerful weapon which we can use to change the world”. World- The one you live in and the one around
+                    you.There are many who know its importance but unable to pursue it due to various hindrances and there
+                    are some who are notawareof its importancetoo. People of both these kinds need help which in turn will
+                    help them to change their worldas well as the one around them. Don’t we have the responsibility to rise
+                    them?
+                </p>
+                <a href="javascript:void(0)">More...</a>
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">AGRICULTURE</h5>
+                <p>“Agriculture is the backbone of our country” – Something everyone of us have read. Are we really concerned
+                    about the backbone of our country? According to a survey, an average, the annual rate of farmers committing
+                    suicide is being recorded as 10,000 per annum.Everyone wishes to change the plight of agriculture and
+                    farmers. But are we really working towards it?</p>
+                <a href="javascript:void(0)">More...</a>
+
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">WELFARE TO ORPHAN and OLD</h5>
+                <p>“Being ignored by someone whose attention means the world to you is the worst feeling” – The numerous orphanages
+                    and old-age homes are the results of ignorance shown towards children and the elderly. They are the people
+                    who are in need of utmost love and affection but have been denied of their basic rights from the very
+                    people they love. Though financial aids can fill their stomach but it is not what they reallylong for.Do
+                    they really deserve this?</p>
+                <a href="javascript:void(0)">More...</a>
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">ERADICATION OF CHILD LABOUR</h5>
+                <p>“Child labour and poverty are inevitably bound together” – If we stoodup to eradicate child labour, then
+                    the first step towards it will be eradicating poverty. A child should never be denied of his/her right
+                    to education. Brightening a child’s future can begin only with the eradication of child labour.Can’t
+                    we create a society where not even a single child is employed as a labour? </p>
+                <a href="javascript:void(0)">More...</a>
+
+            </div>
+        </div>
+
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">BETTERMENT OF HOMELESS</h5>
+                <p>“If you have a family that love you, a few good friends, food on the table and a roof over your head, you
+                    are richer than you think” – When many of us plan for our vacations, there are millions out there who
+                    don’t even have a permanent place to stay and not sure of having their next meal.Why shouldn’t they be
+                    lifted up to make their living on their own? </p>
+                <a href="javascript:void(0)">More...</a>
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">GENDER EQUALITY</h5>
+                <p>“Beauty begins the moment you decide to be yourself” – Still there are parents who can’t accept their child
+                    as a transgender.People in this society still break their confidence preventing them to lead a normal
+                    life. In fact, many of us are not ready to accept them as one of us. What wrong have they done to face
+                    all this? </p>
+                <a href="javascript:void(0)">More...</a>
+                    
+
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">ENVIRONMENT</h5>
+                <p>“The environment is god’s gift to everyone, and in our use of it we have a responsibility towards the future
+                    generations, and towards humanity as a whole” – And we are failing miserably in fulfilling this responsibility.
+                    The environment which we live in, its not ours to relish it. It was bequeathed to us by our past generations
+                    and we have rented it out from our future generations. Isn’tit our responsibility to provide our future
+                    generations a clean and green environment or should they suffer for our selfish needs?</p>
+                <a href="javascript:void(0)">More...</a>
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">POLITICAL AWARENESS</h5>
+                <p>“Bad leaders are elected by good citizens who do not vote” – And by the ones who are ignorant towards those
+                    leaders. People of a country are given a responsibility which when not taken seriously, backfires. To
+                    full fill that responsibility,people need to be aware of theirknowledge in politics.Every vote counts
+                    and every vote matter. Getting lured by grants and bribes may give us a sweet present but will ultimately
+                    lead us to a bitter future. So do we need a sweet present or a bitter future. The answer lies within
+                    us.
+                </p>
+                <a href="javascript:void(0)">More...</a>
+
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">SOCIAL WELFARE</h5>
+                <p>“Society is a web of social relationships” – Not to deny the fact that is as complex as a web as well. This
+                    complexity affects the life of many people creating inequality in the society. Isn’t it important to
+                    work towards creating a more stable society?</p>
+                <a href="javascript:void(0)">More...</a>
+
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">GO GREEN</h5>
+                <p>“Go Green, There is no Planet B” – Even if there was such a planet, It will be forced to face the same condition.
+                    Decisions we make in our everyday lives have a major impact on the planet. Those decisions can be as
+                    simple as, “Saving water”, “Avoiding bottled water”, “Keeping electronics out of trash”. Isn’t it time
+                    to save the only planet we have?</p>
+                <a href="javascript:void(0)">More...</a>
+
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">DIFFEREBTLY ABLED</h5>
+                <p>“However difficult life may seem, there is always something you can do and Succeed at” – Stephen Hawking,
+                    a differently abled physicist, cosmologist and author. Every life has a purpose on this earth, even for
+                    a differently abled person. Shouldn’t we help them find it? So that they lead a life as colourful as
+                    everybody else.</p>
+                <a href="javascript:void(0)">More...</a>
+
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">EMPOWERING TRADITIONS</h5>
+                <p>“It takes an endless amount of history to make even a little tradition” – And we have a history tracing back
+                    to 15000 BC. In this long run, we have created a way of living which defines us which includes traditions
+                    games. Each and every game was defined by our ancestors with its own purpose. And here we are, letting
+                    it die, ready to forget our identity. What will happen if we forget our own way of living?</p>
+                <a href="javascript:void(0)">More...</a>
+
+            </div>
+        </div>
+        <div class="events">
+            <div class="event-cards">
+                <div class="event-tile-img"></div>
+                <h5 class="mt-3">RURAL DEVELOPMENT</h5>
+                <p>“When the world is busy dreaming about Skyscrapers, we have people who suffer for basic needs in their home”
+                    – There are people who don’t have proper toilets built. They suffer without good water storage facilities,
+                    no school to study nearby and the list goes on. Are we going to turn a blind eye on them?</p>
+                <a href="javascript:void(0)">More...</a>
+
+            </div>
+        </div>
+    </div>
+    <section id="contact">
+            <div class="container">
+              <div class="row mb-4">
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Contact Us</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="row">
+                      <div class="col-md-6 address">
+                        <h3>Address:</h3>
+                        <h6>Siragugal Trust</h6>
+                        <h6>12/463 C1, Jeeva Nagar,</h6>
+                        <h6>Manamadurai</h6>
+                        <h6>Sivagangai DT</h6>
+                        <h6>Tamil Nadu-630606</h6>
+                        <h6 class="mt-4">
+                          <span>Phone: </span>+91 8300438281</h6>
+                        <h6>
+                          <span>Email: </span>info@siragugaltrust.in</h6>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                          <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                          <div id="success"></div>
+                          <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+        
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="list-inline quicklinks">
+                                <li class="list-inline-item">
+                                    <a href="privacypolicy">Privacy Policy</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="termsandcond">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-inline social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="https://twitter.com/Siragugal2serve" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/SiragugalTrust" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/SiragugalTrust" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.youtube.com/SiragugalTrust" target="_blank">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+        
+                            <label class="our-team">Powered By
+                                <span class="our-team">The CoDe Team.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script> -->
+    <script src="js/agency.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>

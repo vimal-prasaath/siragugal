@@ -1,0 +1,7 @@
+.enroll-wrapper {
+    min-height: calc(100vh - 160px);
+    margin-top: 70px
+}
+.next-button {
+    max-width: 100px;
+}

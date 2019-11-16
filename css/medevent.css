@@ -1,0 +1,27 @@
+.med-events  {
+    margin-top:68px;
+}
+.carousel-inner img{
+    max-height: 600px;
+    object-fit: contain;
+}
+body {
+    background: black;
+}
+.carousel-indicators {
+    margin:0;
+    bottom:-15px;
+}
+.card {
+    width: 100%;
+}
+.purchased-items {
+    list-style-type: none;
+    padding: 0;
+}
+.med-events button {
+    color: #ddad07;
+}
+.med-events button:hover {
+    color:black;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Siragugal Trust / Profile</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+  <!-- bootstrap -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="img/logo.jpg" type="image/gif" sizes="16x16">
+  
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/user.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/home.css" />
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="home"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+                <div class="mt-2 mr-3 js-scroll-trigger">
+                    <a class=" btn btn-primary" href="voulnteerenrollment">Volunteer</a>
+                </div>
+
+            </li>
+          <li class="nav-item">
+            <!-- <a class="" href="home#contact">Contact Us</a> -->
+            <div class="mt-2 mr-3 js-scroll-trigger">
+              <a class=" btn btn-primary" href=javascript:void(0) onclick="donate()">DONATE</a>
+            </div>
+
+          </li>
+          <li class="nav-item" id="login">
+            <a class="btn btn-primary text-uppercase mt-2" id="login-btn" href="login">Login</a>
+            <div class="dropdown d-none" id="login-drpdwm">
+              <a class="btn btn-primary dropdown-toggle mt-2" href="#" role="button" id="userName" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Login / Signup
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <!-- <a class="dropdown-item" href="#">Change Password</a> -->
+                <a class="dropdown-item" href="#">My Profile</a>
+                <a class="dropdown-item" href="#" onclick="logout()">Log Out</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container user-wrapper pt-5">
+    <h2 class="text-center my-5">Welcome
+      <span id="user-name">Siragugal</span>
+      !!!
+    </h2>
+    <!-- <h3 class="text-center my-5">You have donated
+      <span> &#8377; 0.</span>
+    </h3> -->
+    <!-- <form> -->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Name:</label>
+          <input type="text" class="form-control" id="user_name"disabled>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email:</label>
+          <input type="email" class="form-control" disabled  id="user_email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Phone Number:</label>
+          <input type="number" class="form-control" disabled id="user_phone">
+        </div>
+        <!-- <div class="form-group col-md-6">
+          <label for="inputEmail4">Date of Birth</label>
+          <input type="number" class="form-control" disabled id="dob">
+        </div> -->
+      </div>
+      <!-- <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Father's Name</label>
+          <input type="text" class="form-control" value="siragugal" disabled>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Mother's Name</label>
+          <input type="text" class="form-control" value="siragugal" disabled>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <textarea name="" id="" class="form-control" cols="30" rows="5" disabled placeholder="1234 Main St"></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" disabled value="Madurai">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <input type="text" class="form-control" disabled value="TamilNadu">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Pin Code</label>
+          <input type="text" class="form-control" disabled value="666666">
+        </div>
+      </div> -->
+      <button type="submit" class="btn btn-primary d-none" onclick="edit()">Edit</button>
+      <button type="submit" class="btn btn-primary ml-3 d-none" id="saveUser">Save</button>
+      
+    <!-- </form> -->
+  </div>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <!-- <span class="copyright">Copyright &copy; Your Website 2018</span> -->
+          <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="privacypolicy">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="termsandcond">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/Siragugal2serve" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/SiragugalTrust" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/SiragugalTrust" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.youtube.com/SiragugalTrust" target="_blank">
+                  <i class="fa fa-youtube"></i>
+                </a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+
+          <label class="our-team">Powered By <span class="our-team">The CoDe Team.</span></label>
+       
+          </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+  <script src="js/agency.js"></script>
+  <script src="js/userdetails.js"></script>
+  <script src="js/index.js"></script>
+  
+
+
+
+</body>
+
+</html>

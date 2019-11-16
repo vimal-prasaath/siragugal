@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Siragugal Trust / Login</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/signups.css">
+  <link rel="icon" href="img/logo.jpg" type="image/gif" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+
+  <!-- bootstrap -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/signups.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="form center">
+
+    <ul class="tab-group">
+      <li class="tab active">
+        <a href="#login">Log In</a>
+      </li>
+      <li class="tab">
+        <a href="#signup">Sign Up</a>
+      </li>
+
+    </ul>
+
+    <div class="tab-content">
+        <div id="login">
+            <h1>Welcome!</h1>
+    
+            <!-- <form action="/" method="post"> -->
+    
+              <div class="field-wrap">
+                <label>
+                  Phone No
+                  <span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off" id="u_phone"/>
+              </div>
+    
+              <div class="field-wrap">
+                <label>
+                  Password
+                  <span class="req">*</span>
+                </label>
+                <input type="password" required autocomplete="off" id="u_pass"/>
+              </div>
+    
+              <p class="forgot">
+                <a href="#" onclick="forgetPass()" class="txt-black">Forgot Password?</a>
+              </p>
+    
+              <button class="button button-block" onclick="logIn()">Log In</button>
+    
+            <!-- </form> -->
+    
+          </div>
+      <div id="signup">
+        <h1>Sign Up</h1>
+
+        <!-- <form action="/" method="post"> -->
+
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name
+                <span class="req">*</span>
+              </label>
+              <input type="text" required id="fname" autocomplete="off" />
+            </div>
+
+            <div class="field-wrap">
+              <label>
+                Last Name
+                <span class="req">*</span>
+              </label>
+              <input type="text" required id="lname" autocomplete="off" />
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address
+              <span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off" id="email"/>
+          </div>
+          <div class="field-wrap">
+            <label>
+              Phone Number
+              <span class="req">*</span>
+            </label>
+            <input type="text" required autocomplete="off" id="phone" maxlength="10" minlength="10"/>
+          </div>
+          <div class="field-wrap">
+            <label>
+              Set A Password
+              <span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" id="password" />
+          </div>
+          <div class="field-wrap mb-1">
+            <label>
+              Re-Enter
+              <span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" id="re-password"/>
+          </div>
+          <p class="text-center terms-and-cond">By signing up you accept our <a href="termsandcond" class="terms" target="_blank">Terms &amp; Conditions.</a></p>
+          <div class="overlay whoweare hide text-left" id="whoweare">
+              <div class="p-5 mt-sm-5">
+                <h2 class="subheading text-center my-sm-5">TERMS AND CONDITIONS</h2>
+                <p class="text-center">You agree to receive promotional, transactional and commercial communications from SIRAGUGAL Trust through email or SMS</p>
+                <p class="text-center">
+                  <a href="javascript:void(0)" id="termshide" onclick="termshide()">Close</a>
+                </p>
+              </div>
+            </div>
+          <button type="submit" class="button button-block" onclick="validate()"/>Join Us</button>
+
+        <!-- </form> -->
+
+      </div>
+
+
+
+    </div>
+    <!-- tab-content -->
+
+  </div>
+  <!-- /form -->
+  <div class="otp-box d-none" id="otp-box">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">Enter the OTP</h5>
+          <input type="text" class="form-control" id="otp"> 
+          <a href="#" class="d-block text-left my-2" onclick="resendOtp()">Resend OTP</a>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary w-100" onclick="verifyNewUserOtp()">Verify</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="otp-box-forget-password d-none" id="otp-box-forget-password">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Enter the OTP</h5>
+            <input type="text" class="form-control" id="otp-forget">
+            <a href="#" class="d-block text-left my-2" onclick="resendOtp()">Resend OTP</a>                          
+            <div class="text-center">
+              <a href="#" class="btn btn-primary w-100" onclick="forgetPassOtp()">Verify</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="forget-password d-none" id="forget-password">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Create New Password</h5>
+              <input type="password" class="form-control" id="new-password">
+              <h5 class="card-title mt-3">Re-Enter Password</h5>
+              <input type="password" class="form-control" id="re-new-password">
+              <div class="text-center mt-3">
+                <a href="#" class="btn btn-primary w-100" onclick="changePassword()">Change</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

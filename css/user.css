@@ -1,0 +1,20 @@
+body {
+  background-color: #212529;
+  background-image: url(../img/map-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.user-wrapper {
+  padding:20px;
+  color:white;
+  height: calc(100vh - 90px);
+}
+.our-team {
+  font-size: 12px;
+  margin-top:10px;
+  color:white;
+}
+.our-team span{
+  color:#fed136;
+  font-size: 16px;
+}
